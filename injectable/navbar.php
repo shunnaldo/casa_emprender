@@ -98,7 +98,7 @@
 <div class="navbar-wrapper">
   <nav class="custom-navbar">
     <a class="custom-navbar-logo">
-      <img src="https://fomentolaflorida.cl/sistema_reservas/Sistema_reservas-/img/Logo%20CE%20negro-02.png" alt="logo">
+      <img src="https://fomentolaflorida.cl/sistema_reservas2/Sistema_reservas-/img/Logo%20CE%20negro-02.png" alt="logo">
     </a>
     <a href="index.php" class="custom-navbar-link">Home</a>
     <a href="https://www.fomentolf.cl/casa.php" class="custom-navbar-link">Conócenos</a>
