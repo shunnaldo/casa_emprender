@@ -1,0 +1,137 @@
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --success-color: #2ecc71;
+            --danger-color: #e74c3c;
+            --warning-color: #f39c12;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .page-header {
+
+            color: #2c3e50;
+            padding: 1.5rem 0;
+            margin-bottom: 2rem;
+
+        }
+        
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            margin-bottom: 1.5rem;
+        }
+        
+        .card-header {
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 10px 10px 0 0 !important;
+            font-weight: 500;
+        }
+        
+        .btn-primary {
+            background-color: var(--secondary-color);
+            border: none;
+        }
+        
+        .btn-primary:hover {
+            background-color: #2980b9;
+        }
+        
+        .btn-warning {
+            background-color: var(--warning-color);
+            border: none;
+            color: white;
+        }
+        
+        .btn-warning:hover {
+            background-color: #e67e22;
+            color: white;
+        }
+        
+        .btn-danger {
+            background-color: var(--danger-color);
+            border: none;
+        }
+        
+        .btn-danger:hover {
+            background-color: #c0392b;
+        }
+        
+        .table th {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: 500;
+        }
+        
+        .badge-status {
+            padding: 0.35em 0.65em;
+            border-radius: 50px;
+            font-size: 0.75em;
+            font-weight: 600;
+        }
+        
+        .badge-admin {
+            background-color: rgba(231, 76, 60, 0.2);
+            color: var(--danger-color);
+        }
+        
+        .badge-user {
+            background-color: rgba(46, 204, 113, 0.2);
+            color: var(--success-color);
+        }
+        
+        .icon-wrapper {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+        }
+        
+        .user-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--secondary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+        .badge-admin {
+            background-color: #b93333ff; /* rojo */
+            color: #fff;
+        }
+
+        .badge-staff {
+            background-color: #3cdb34ff; /* azul */
+            color: #fff;
+        }
+
+        .badge-proyecto {
+            background-color: #8b53a2ff; /* morado */
+            color: #fff;
+        }
+
+        .badge-user {
+            background-color: #7f8c8d; /* gris */
+            color: #fff;
+        }
+
+        
+        @media (max-width: 768px) {
+            .table-responsive {
+                font-size: 0.875rem;
+            }
+            
+            .btn-sm {
+                padding: 0.25rem 0.5rem;
+                font-size: 0.75rem;
+            }
+        }

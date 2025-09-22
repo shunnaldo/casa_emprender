@@ -1,0 +1,236 @@
+
+
+        body {
+            background-size: cover;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+        }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.3); /* negro semi-transparente */
+            min-height: 100vh;
+            padding-top: 20px;
+            padding-bottom: 50px;
+        }
+
+
+
+        
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+            border: none;
+            overflow: hidden;
+        }
+        
+        .card-header {
+            background-color: #ffffff;
+            color: #2c3e50;
+            border-bottom: 1px solid #eaeaea;
+            padding: 25px 30px;
+        }
+        
+        .card-header h3 {
+            font-weight: 600;
+            font-size: 1.6rem;
+        }
+        
+        .card-body {
+            padding: 30px;
+        }
+        
+        .form-control, .form-select {
+            border-radius: 6px;
+            padding: 12px 15px;
+            border: 1px solid #e0e0e0;
+            font-size: 0.95rem;
+            transition: all 0.2s;
+        }
+        
+        .form-control:focus, .form-select:focus {
+            box-shadow: 0 0 0 3px rgba(44, 62, 80, 0.1);
+            border-color: #b0b0b0;
+        }
+        
+        .form-label {
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: #444;
+            font-size: 0.9rem;
+        }
+        
+        .input-group-text {
+            background-color: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px 0 0 6px;
+        }
+        
+        .btn-reservar {
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s;
+            font-size: 1rem;
+        }
+        
+        .btn-reservar:hover {
+            background-color: #1a252f;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(44, 62, 80, 0.2);
+        }
+        
+        #cupos_disp {
+            font-size: 0.85rem;
+            padding: 5px 0;
+            color: #2c3e50;
+        }
+        
+        .icon-color {
+            color: #2c3e50;
+        }
+        
+        .form-section {
+            margin-bottom: 1.5rem;
+        }
+        
+        .section-title {
+            font-size: 1.1rem;
+            color: #2c3e50;
+            margin-bottom: 1.2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #f0f0f0;
+            font-weight: 600;
+        }
+        
+        small.text-muted {
+            font-size: 0.8rem;
+        }
+        
+        @media (max-width: 768px) {
+            .card-body {
+                padding: 20px;
+            }
+        }
+
+
+
+
+
+                /* Estilos para el popup personalizado */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .popup-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .popup {
+            background: white;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 450px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transform: translateY(20px);
+            transition: transform 0.3s ease;
+        }
+
+        .popup-overlay.active .popup {
+            transform: translateY(0);
+        }
+
+        .popup-header {
+            background: #212121;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .popup-header h3 {
+            font-size: 1.3rem;
+            margin: 0;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .close-btn:hover {
+            transform: rotate(90deg);
+        }
+
+        .popup-body {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .popup-body p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .popup-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .popup-btn {
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .popup-btn.info {
+            background: #4a90e2;
+            color: white;
+            border: none;
+        }
+
+        .popup-btn.info:hover {
+            background: #3a80d2;
+        }
+
+        .popup-btn.close {
+            background: none;
+            border: 1px solid #ddd;
+            color: #666;
+        }
+
+        .popup-btn.close:hover {
+            background: #f5f5f5;
+        }
+
+        /* Responsive para el popup */
+        @media (max-width: 600px) {
+            .popup-buttons {
+                flex-direction: column;
+            }
+        }

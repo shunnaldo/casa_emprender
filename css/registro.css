@@ -1,0 +1,129 @@
+        :root {
+            --color-primary: #2c3e50;
+            --color-secondary: #3498db;
+            --color-success: #2ecc71;
+            --color-danger: #e74c3c;
+            --color-warning: #f39c12;
+            --color-light: #f8f9fa;
+        }
+        
+        .system-body {
+            background-color: var(--color-light);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+        }
+        
+        .system-header {
+            color: #2c3e50;
+            padding: 1.5rem 0;
+
+  
+        }
+        
+        .card-form {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+        }
+        
+        .card-header-custom {
+            background-color: var(--color-primary);
+            color: white;
+            border-radius: 10px 10px 0 0 !important;
+            font-weight: 500;
+            padding: 1.5rem;
+        }
+        
+        .form-label-custom {
+            font-weight: 500;
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .form-control-custom {
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 0.75rem 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .form-control-custom:focus {
+            border-color: var(--color-secondary);
+            box-shadow: 0 0 0 0.25rem rgba(52, 152, 219, 0.25);
+        }
+        
+        .form-select-custom {
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 0.75rem 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .form-select-custom:focus {
+            border-color: var(--color-secondary);
+            box-shadow: 0 0 0 0.25rem rgba(52, 152, 219, 0.25);
+        }
+        
+        .btn-register {
+            background: linear-gradient(135deg, var(--color-secondary) 0%, #2980b9 100%);
+            border: none;
+            border-radius: 8px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-register:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+        }
+        
+        .icon-form {
+            margin-right: 0.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .password-toggle {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #6c757d;
+            z-index: 5;
+        }
+        
+        .password-container {
+            position: relative;
+        }
+        
+        .role-badge {
+            padding: 0.35em 0.65em;
+            border-radius: 50px;
+            font-size: 0.75em;
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
+        
+        .badge-admin {
+            background-color: rgba(231, 76, 60, 0.2);
+            color: var(--color-danger);
+        }
+        
+        .badge-staff {
+            background-color: rgba(46, 204, 113, 0.2);
+            color: var(--color-success);
+        }
+        
+        @media (max-width: 768px) {
+            .card-form {
+                margin: 1rem;
+            }
+            
+            .system-header {
+                margin-bottom: 1rem;
+            }
+        }
